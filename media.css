@@ -1,0 +1,152 @@
+@media (max-width: 768px){
+  #main-nav .container{
+    grid-template-columns: 3fr 3fr 2fr;
+    justify-content: space-between;
+  }
+  #main-nav .logo{
+    width: 160px;
+  }
+  .showcase-container{
+    width: 60%;
+  }
+  .showcase .showcase-content{
+    padding: 2rem 0;
+  }
+  #home-article .article-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  #home-article .article-container article:first-child,
+  #home-article .article-container article:last-child{
+    grid-template-columns: 1fr;
+    grid-column: 1;
+  }
+  #home-article .article-container article:last-child{
+    grid-column: 1;
+  }
+  #about .about-article{
+    grid-template-columns: 1fr;
+  }
+  #about .about-article main{
+    grid-row: 1;
+  }
+  #about .about-article aside{
+    padding: 1rem 4rem;
+    text-align: center;
+  }
+  #about .about-article aside a{
+    width: 40%;
+    margin: auto;
+  }
+}
+/* for footer and article blog */
+@media (max-width: 750px){
+  #footer .footer-container{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #article-blog .article-blog-post{
+    grid-template-columns: 1fr;
+  }
+  #article-blog .article-blog-post main h1{
+    font-size: 2.3rem;
+  }
+  .aside .category-block h1,
+  .aside .join-block h1{
+    font-size: 1.4rem;
+  }
+  .aside .join-block{
+    text-align: center;
+  }
+  .aside .join-block a{
+    width: 50%;
+    margin: auto;
+  }
+}
+
+/* for mobile */
+@media (max-width: 560px){
+  #main-nav .container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  #main-nav .logo{
+    width: 150px;
+  }
+  .container ul{
+    grid-column: 1 / span 2;
+    margin-bottom: 0.1rem;
+  }
+  .container ul li a{
+    padding: 0.5rem;
+  }
+  #main-nav .social i{
+    font-size: 1.5rem;
+    padding: 0.1rem;
+  }
+  .showcase-container{
+    width: 80%;
+  }
+  .showcase .showcase-content h1{
+    font-size: 1.8rem;
+  }
+  #home-article .article-container{
+    grid-template-columns: 1fr;
+  }
+  #footer .footer-container{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr;
+  }
+  .footer-blocks h1{
+    font-size: 1.3rem;
+  }
+  #about{
+    padding: 0.5rem 0;
+  }
+  #about .container{
+    padding: 0 0.5rem;
+  }
+  #about .about-article main h1{
+    font-size: 1.7rem;
+  }
+  #about .about-article aside{
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  #about .about-article aside a{
+    width: 70%;
+    margin: auto;
+   }
+   #article-blog .container{
+    padding: 0 .5rem;
+   }
+  #article-blog .article-blog-post main h1{
+    font-size: 1.7rem;
+  }
+  .aside .category-block h1,
+  .aside .join-block h1{
+    font-size: 1.3rem;
+  }
+  #article-blog .article-blog-post main .author{
+    padding: 0.8rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  #article-blog .article-blog-post main .author p{
+    align-self: center;
+  }
+}
+/* max height */
+@media (max-height: 450px){
+  .showcase{
+    height: 80vh;
+  }
+  .showcase-container{
+    position: absolute;
+    height: 80vh;
+    width: 80%;
+  }
+}
