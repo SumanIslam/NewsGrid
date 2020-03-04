@@ -67,8 +67,11 @@
         <div class="footer-blocks">
           <h1>EMAIL NEWSLETTER</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <input type="email" name="email" id="email" placeholder="Enter Email...">
-          <a href="#" class="btn btn-block btn-primary">Subscribe</a>
+          <form name="contact" method="POST" data-netlify="true">
+            <input type="email" name="email" id="email" placeholder="Enter Email...">
+            <input type="submit" value="Subscribe" class="btn btn-block btn-primary">
+            <!-- <a href="#" class="btn btn-block btn-primary">Subscribe</a> -->
+          </form>
         </div>
         <!-- 3rd block -->
         <div class="footer-blocks">

@@ -110,6 +110,7 @@ h1,h2,h3,h4,h5,h6{
   background-color: #fff;
   padding: 1rem 0;
   color: #333;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -118,15 +119,19 @@ h1,h2,h3,h4,h5,h6{
 #main-nav .container{
   display: grid;
   grid-template-columns: 6fr 3fr 2fr;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 #main-nav .logo{
   width: 180px;
 }
 .container ul{
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 .container ul li a{
   padding: 0.7rem;
@@ -216,6 +221,7 @@ h1,h2,h3,h4,h5,h6{
   width: 90%;
   padding: .5rem;
   margin-bottom: 0.5rem;
+  border: none;
 }
 .footer-blocks .btn-block{
   display: block;
@@ -233,6 +239,7 @@ h1,h2,h3,h4,h5,h6{
   padding: 0.5rem 0;
   border-bottom: 0.5px dotted #555;
   text-align: left;
+  -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
 .footer-blocks p a:hover,
@@ -308,9 +315,12 @@ h1,h2,h3,h4,h5,h6{
 #article-blog .article-blog-post main .author{
   background-color: #e6e6e6;
   padding: 0.8rem 0.5rem;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
   margin-bottom: 1rem;
 }
 #article-blog .article-blog-post main > p{
