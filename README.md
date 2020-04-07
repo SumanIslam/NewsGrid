@@ -1,5 +1,6 @@
 # NewsGrid-Clone
 this is newsgrid website created using grid
 
-this is the link to see the webiste...
-https://modest-ritchie-d4b2cb.netlify.com
+#website link
+github pages: https://sumanislam.github.io/NewsGrid/index.html
+netlify: https://modest-ritchie-d4b2cb.netlify.com
